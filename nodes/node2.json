@@ -1,0 +1,13 @@
+{
+  "name": "Node1",
+  "chef_environment": "dev",
+  "run_list": [
+  "recipe[docker-deploy::node]"
+]
+,
+  "normal": {
+    "tags": [
+
+    ]
+  }
+}

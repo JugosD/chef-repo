@@ -1,0 +1,7 @@
+DEPENDENCIES
+  docker-deploy
+    path: .
+    metadata: true
+
+GRAPH
+  docker-deploy (0.1.30)

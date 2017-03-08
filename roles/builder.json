@@ -1,0 +1,22 @@
+{
+  "name": "builder",
+  "description": "Server for different services",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "chef_type": "role",
+  "run_list": [
+	"recipe[base]",
+    "recipe[security::server]",
+    "recipe[monitoring::server]",
+    "recipe[monitoring::node]",
+    "recipe[docker-deploy::server]"
+  ],
+  "env_run_lists": {
+
+  }
+}

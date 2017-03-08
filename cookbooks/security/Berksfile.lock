@@ -1,0 +1,7 @@
+DEPENDENCIES
+  security
+    path: .
+    metadata: true
+
+GRAPH
+  security (0.1.5)

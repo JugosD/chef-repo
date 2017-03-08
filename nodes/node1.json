@@ -1,0 +1,14 @@
+{
+  "name": "node1",
+  "set_fqdn": "node1",
+  "chef_environment": "dev",
+  "run_list": [
+  "role[node]"
+]
+,
+  "normal": {
+    "tags": [
+
+    ]
+  }
+}

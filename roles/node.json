@@ -1,0 +1,20 @@
+{
+  "name": "node",
+  "description": "Nodes (docker, collectd, etc)",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[base]",
+    "recipe[security::node]",
+    "recipe[docker-deploy::node]"
+  ],
+  "env_run_lists": {
+
+  }
+}

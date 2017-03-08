@@ -1,0 +1,7 @@
+DEPENDENCIES
+  monitoring
+    path: .
+    metadata: true
+
+GRAPH
+  monitoring (0.1.20)

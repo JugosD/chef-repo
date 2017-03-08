@@ -1,0 +1,13 @@
+{
+  "name": "builder",
+  "chef_environment": "dev",
+  "run_list": [
+  "role[builder]"
+]
+,
+  "normal": {
+    "tags": [
+
+    ]
+  }
+}
