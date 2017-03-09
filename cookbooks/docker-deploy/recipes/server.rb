@@ -10,8 +10,6 @@ include_recipe "docker-deploy"
 
 # pull images
 execute "docker pull registry"
-execute "docker pull jenkins"
-execute "docker pull sonatype/nexus"
 
 # clean containers
 execute "clean" do
@@ -25,19 +23,6 @@ execute "docker network create my_network" do
 end
 
 # run continers
-execute "jenkins" do
-	command <<~EOF.gsub("\n"," ")
-		docker run
-		--detach
-		--name jenkins
-		--network my_network
-		--publish 8080:8080
-		--volume #{workspace}/jenkins_home:/var/jenkins_home:z
-		jenkins 
-		EOF
-	not_if "docker ps --all --format {{.Names}} | grep jenkins"
-end
-
 execute "registry" do
 	command <<~EOF.gsub("\n"," ")
 		docker run
