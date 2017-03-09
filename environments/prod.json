@@ -2,14 +2,15 @@
   "name": "prod",
   "description": "",
   "cookbook_versions": {
-
+    "base": "= 0.1.2",
+    "security": "= 0.1.8",
+    "monitoring": "= 0.1.23",
+    "docker-deploy": "= 0.1.41"
   },
   "json_class": "Chef::Environment",
   "chef_type": "environment",
   "default_attributes": {
-    "training": {
-      "deploy_version": "0.0.73"
-    }
+
   },
   "override_attributes": {
 

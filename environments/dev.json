@@ -1,17 +1,18 @@
 {
-    "default_attributes": {
-        "training": {
-            "deploy_version": "0.0.74"
-        }
-    },
-    "chef_type": "environment",
-    "name": "dev",
-    "description": "",
-    "json_class": "Chef::Environment",
-    "cookbook_versions": {
-        
-    },
-    "override_attributes": {
-        
-    }
+  "name": "dev",
+  "description": "",
+  "cookbook_versions": {
+    "base": "~> 0.1",
+    "security": "~> 0.1",
+    "monitoring": "~> 0.1",
+    "docker-deploy": "= 0.1.42"
+  },
+  "json_class": "Chef::Environment",
+  "chef_type": "environment",
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  }
 }
